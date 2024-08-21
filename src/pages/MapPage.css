@@ -1,0 +1,62 @@
+.map-page {
+    display: flex;
+    height: 100vh; /* Ensure the container takes full viewport height */
+    position: relative; /* Relative positioning for the sidebar toggle button */
+  }
+  
+  .map-page.sidebar-closed .map {
+    width: 100%; /* Map takes full width when sidebar is closed */
+  }
+  
+  .map {
+    flex: 3; /* Adjust the map's width proportionally */
+    height: 100%;
+    transition: flex 0.3s ease-in-out; /* Smooth transition when toggling sidebar */
+  }
+  
+  .sidebar {
+    flex: 1; /* Sidebar takes 1/4th of the screen width */
+    height: 100%;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for the sidebar */
+    overflow-y: auto;
+    position: relative; /* Position the button inside the sidebar */
+    transition: flex 0.3s ease-in-out; /* Smooth transition when toggling sidebar */
+  }
+  
+  .map-page.sidebar-closed .sidebar {
+    flex: 0 0 0px; /* Sidebar collapses to 50px width when closed */
+    overflow: hidden; /* Hide content when sidebar is closed */
+    padding: 20px 0; /* Keep padding for the button */
+  }
+  
+  .place-details {
+    margin-bottom: 20px;
+  }
+  
+  .place-details h3 {
+    margin-top: 0;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 1000; /* Ensure the button is above other elements */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .map-page.sidebar-closed .toggle-button {
+    left: -60px; /* Adjust button position when sidebar is closed */
+  }
+  

@@ -1,0 +1,133 @@
+
+  
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .left {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  }
+  
+  .image:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  }
+  
+  
+  .input-group-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-label {
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 2px;
+  }
+  
+  .input-group-container .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    color: #050101;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+
+  .input-group-container .btn-remove {
+    background-color: #e64f3b;
+    color: white;
+    width: 75px;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+
+  .input-group-container .btn-remove:hover {
+    background-color: #ed1d1d; /* Darker gray on hover */
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .lastbtns {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lastbtns .btn-add {
+  background-color: #6c757d;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+}
+
+.lastbtns .btn-add:hover {
+  background-color: #262a2c; /* Darker gray on hover */
+  color: white;
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+.lastbtns .btn-submit {
+  background-color: #007bff;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+}
+
+.lastbtns .btn-submit:hover {
+  background-color: #03458c; /* Darker blue on hover */
+  color: white;
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+  
+  
+  
+  
